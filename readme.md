@@ -13,7 +13,7 @@ and then run the JAR file
 
 #how to test
 Now that the application is running, you can test it. 
-1. Create a file request.xml containing the following SOAP request:
+- Create a file request.xml containing the following SOAP request:
 
 `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
 				  xmlns:gs="http://spring.io/guides/gs-producing-web-service">
@@ -25,9 +25,12 @@ Now that the application is running, you can test it.
    </soapenv:Body>
 </soapenv:Envelope>`
 
-2. test the soap interface with command line 
-$ curl --header "content-type: text/xml" -d @request.xml http://localhost:8080/ws 
-As a result you should see this response:
+- test the soap interface with command line 
+
+`$ curl --header "content-type: text/xml" -d @request.xml http://localhost:8080/ws `
+
+- As a result you should see this response:
+
 `<?xml version="1.0"?>
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
   <SOAP-ENV:Header/>
