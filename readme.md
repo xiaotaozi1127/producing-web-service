@@ -9,7 +9,7 @@ https://spring.io/guides/gs/producing-web-service/
 or 
 `./mvnw clean package`
 and then run the JAR file
-`java -jar target/gs-soap-service-0.1.0.jar`
+`java -jar target/producing-web-service-0.0.1-SNAPSHOT.jar`
 
 # How to test
 Now that the application is running, you can test it. 
