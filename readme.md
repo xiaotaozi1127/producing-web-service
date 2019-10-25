@@ -1,18 +1,20 @@
-
+# producing-web-service
+This will build a SOAP-based web service which can provide country data.
 Reference:
 https://spring.io/guides/gs/producing-web-service/
 
-#how to run
+# How to run
 `./mvnw spring-boot:run`
 
 or 
-build the JAR file
 `./mvnw clean package`
 and then run the JAR file
 `java -jar target/gs-soap-service-0.1.0.jar`
 
-#how to test
+# How to test
 Now that the application is running, you can test it. 
+- verify it is working by visiting http://localhost:8080/ws/countries.wsdl in local browser
+
 - Create a file request.xml containing the following SOAP request:
 
 `<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
